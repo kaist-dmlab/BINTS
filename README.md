@@ -1,1 +1,1 @@
-# BiMNeTS
+# BINS
