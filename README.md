@@ -6,7 +6,9 @@
 Understanding human mobility patterns is a complex challenge that requires modeling both node features and node interactions within graph topologies across time. While previous methods have focused on either node features or interactions, the synergistic integration of these two modalities has proven difficult to achieve. In this paper, we propose ***BINTS*** (**BI**-modal learning for **N**etworked **T**ime **S**eries), a pioneering bi-modal learning framework that employs soft contrastive learning along the temporal axis. ***BINTS*** captures modality similarities and temporal patterns by simultaneously learning from evolving node features and interactions, solving the limitations of single-modality approaches. To evaluate our method, we curate comprehensive multi-modal human mobility datasets spanning diverse locations and times. Our experimental results demonstrate that BINTS significantly outperforms existing forecasting models by capturing synergies across different data modalities. Overall, we establish BINTS as a powerful technique for holistically understanding and forecasting complex mobility dynamics.
 
 ## 2. Proposed Benchmark Datasets
-Due to the big dataset size, we released it on the [anonymous drive](https://drive.google.com/file/d/1E8ngE3Ss7pxC7xRxwWoRwmJyWGM35MpM/view?usp=sharing).
+Due to the big dataset size, we released it on the anonymous drive
+- For research track [drive](https://drive.google.com/file/d/1E8ngE3Ss7pxC7xRxwWoRwmJyWGM35MpM/view?usp=sharing)
+- For benchmark track [drive](https://drive.google.com/file/d/1QQ3d6pSNKJK3b3WXitm2YPtn6qtinLqa/view?usp=sharing)
 
 | **Domain**       | **Dataset** | **#Node** | **Target Dim.** | **Total Period**             | **Train Days** | **Test Days** | **Time Interval** |
 |------------------|-------------|------------|-----------------|------------------------------|----------------|---------------|-------------------|
