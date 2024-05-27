@@ -245,11 +245,11 @@ def _make_loader(batch_size, ts_latent_tensor, od_latent_tensor, complex_tensor,
 
 def load_datasets(dataset, khop=0):
     # Dataset directory
-    ADJ_DIR = "/data2/maradonam/adj_matrix/"
+    ADJ_DIR = "/datasets/adj_matrix/"
     if dataset == "seoul":
         ADJ_FILE = "seoul_adj_matrix_with_diag_1.npy"
-        TS_DIR = "/data2/maradonam/seoul_node_npy_dataset/"
-        OD_DIR = "/data2/maradonam/seoul_npy_dataset_233_by_233/"
+        TS_DIR = "/datasets/seoul_node_npy_dataset/"
+        OD_DIR = "/datasets/seoul_npy_dataset_233_by_233/"
 
         # Origin-Destination Data
         od_datasets  = sorted([f for f in os.listdir(f'{OD_DIR}') if os.path.isdir(os.path.join(f'{OD_DIR}', f))])
@@ -265,8 +265,8 @@ def load_datasets(dataset, khop=0):
     
     elif dataset == "seoul_new":
         ADJ_FILE = "seoul_adj_matrix_with_diag_1_128.npy"
-        TS_DIR = "/data2/maradonam/seoul_node_npy_dataset_new/"
-        OD_DIR = "/data2/maradonam/seoul_npy_dataset_new/"
+        TS_DIR = "/datasets/seoul_node_npy_dataset_new/"
+        OD_DIR = "/datasets/seoul_npy_dataset_new/"
 
         # Origin-Destination Data
         od_datasets  = sorted([f for f in os.listdir(f'{OD_DIR}') if os.path.isdir(os.path.join(f'{OD_DIR}', f))])
@@ -283,32 +283,32 @@ def load_datasets(dataset, khop=0):
     else:
         if dataset == "busan":
             ADJ_FILE = "busan_adj_matrix_with_diag_1.npy"
-            TS_DIR = "/data2/maradonam/2022_busan_node_npy_dataset/"
-            OD_DIR = "/data2/maradonam/2022_busan_npy_dataset_103_by_103/"
+            TS_DIR = "/datasets/2022_busan_node_npy_dataset/"
+            OD_DIR = "/datasets/2022_busan_npy_dataset_103_by_103/"
         elif dataset == "busan_new":
             ADJ_FILE = "busan_adj_matrix_with_diag_1_60.npy"
-            TS_DIR = "/data2/maradonam/busan_node_npy_dataset_new/"
-            OD_DIR = "/data2/maradonam/busan_od_npy_dataset_new/"
+            TS_DIR = "/datasets/busan_node_npy_dataset_new/"
+            OD_DIR = "/datasets/busan_od_npy_dataset_new/"
         elif dataset == "daegu":
             ADJ_FILE = "daegu_adj_matrix_with_diag_1.npy"
-            TS_DIR = "/data2/maradonam/2022_daegu_node_npy_dataset/"
-            OD_DIR = "/data2/maradonam/2022_daegu_npy_dataset_85_by_85/"
+            TS_DIR = "/datasets/2022_daegu_node_npy_dataset/"
+            OD_DIR = "/datasets/2022_daegu_npy_dataset_85_by_85/"
         elif dataset == "daegu_new":
             ADJ_FILE = "daegu_adj_matrix_with_diag_1_61.npy"
-            TS_DIR = "/data2/maradonam/daegu_node_npy_dataset_new/"
-            OD_DIR = "/data2/maradonam/daegu_od_npy_dataset_new/"            
+            TS_DIR = "/datasets/daegu_node_npy_dataset_new/"
+            OD_DIR = "/datasets/daegu_od_npy_dataset_new/"            
         elif dataset == "covid":
             ADJ_FILE = "nationwide_adj_matrix_with_diag_1.npy"
-            TS_DIR = "/data2/maradonam/nationwide_node_npy_dataset/"
-            OD_DIR = "/data2/maradonam/nationwide_npy_dataset/"
+            TS_DIR = "/datasets/nationwide_node_npy_dataset/"
+            OD_DIR = "/datasets/nationwide_npy_dataset/"
         elif dataset == "nyc":
             ADJ_FILE = "nyc_taxi_matrix_with_diag_1.npy"
-            TS_DIR = "/data2/maradonam/nyc_node_npy_dataset/"
-            OD_DIR = "/data2/maradonam/nyc_od_npy_dataset/"
+            TS_DIR = "/datasets/nyc_node_npy_dataset/"
+            OD_DIR = "/datasets/nyc_od_npy_dataset/"
         elif dataset == "nyc_covid":
             ADJ_FILE = "nyc_covid_matrix_with_diag_1.npy"
-            TS_DIR = "/data2/maradonam/nyc_covid_node_npy_dataset/"
-            OD_DIR = "/data2/maradonam/nyc_covid_od_npy_dataset/"
+            TS_DIR = "/datasets/nyc_covid_node_npy_dataset/"
+            OD_DIR = "/datasets/nyc_covid_od_npy_dataset/"
         
         # Origin-Destination Data
         od_datasets  = sorted([f for f in os.listdir(f'{OD_DIR}') if os.path.isfile(os.path.join(f'{OD_DIR}', f))])
