@@ -23,7 +23,7 @@ if __name__ == '__main__':
     cycle_dict = {"busan": 24, "daegu": 24, "seoul": 24, "covid": 1, "nyc": 24, "nyc_covid": 1, "busan_new": 24, "daegu_new": 24, "seoul_new":24}
     node_dim_dict = {"busan": 2, "daegu": 2, "seoul": 2, "covid": 1, "nyc": 2, "nyc_covid": 1, "busan_new": 2, "daegu_new": 2, "seoul_new":2}
     
-    # ResMet1D
+    # ResNet1D
     n_block_dict = {"busan": 48, "daegu": 48, "seoul": 12, "covid": 48, "nyc": 48, "nyc_covid": 48, "busan_new": 48, "daegu_new": 48, "seoul_new":12}
     downsample_dict = {"busan": 48, "daegu": 48, "seoul": 12, "covid": 48, "nyc": 48, "nyc_covid": 48, "busan_new": 48, "daegu_new": 48, "seoul_new":12}
     res_kernel_size_dict = {"busan": 16, "daegu": 16, "seoul": 8, "covid": 16, "nyc": 16, "nyc_covid": 16, "busan_new": 16, "daegu_new": 16, "seoul_new":8}
