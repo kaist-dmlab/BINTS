@@ -30,25 +30,23 @@ Due to the big dataset size, we released it on the anonymous drive
 ## 4. Configuration
 BINTS was implemented in **Python 3.11.5.**
 - Edit main.py file to set experiment parameters (dataset, seq_length, gpu_id(e.g. 0,1,2,3,4,5), etc.)
-```
+```bash
 python3 main.py
 ```
 
 ## 5. How to run
 - Parameter options
-```
+```bash
 --dataset: the name of dataset (string)
 --seq_day: the size of a lookback window (integer)
 --pred_day: the size of a prediction window (integer)
 ```
 
 - At current directory which has all source codes, run main.py with parameters as follows.
-```
+```bash
 - dataset: {busan, daegu, seoul, covid, nyc, nyc_covid}
 - loop: {0, 1, 2, 3, 4}                       # seed for 5-fold evaluation.
 - gpu_id: an integer for gpu id.
 
 e.g.) python3 main.py --gpu_id 1 --multi_gpu 1 --batch_size 8 --dataset nyc --seq_day 4 --pred_day 7 --khop 5
 ```
-## 6. Licence
-Bi-Modal Learning for Networked Time Series © 2024 by Youngeun Nam is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit [(http://creativecommons.org/licenses/by-nc-sa/4.0/)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
