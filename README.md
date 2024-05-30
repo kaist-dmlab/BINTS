@@ -46,7 +46,7 @@ python3 main.py
 ```bash
 - dataset: {busan, daegu, seoul, covid, nyc, nyc_covid}
 - loop: {0, 1, 2, 3, 4}                       # seed for 5-fold evaluation.
-- gpu_id: an integer for gpu id.
+- gpu_id: an integer gpu id.
 
 e.g.) python3 main.py --gpu_id 1 --multi_gpu 1 --batch_size 8 --dataset nyc --seq_day 4 --pred_day 7 --khop 5
 ```
