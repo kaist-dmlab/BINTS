@@ -278,8 +278,7 @@ class CLIP_3D(object):
                 outputs = self.prediction_model(prediction_input)
                 prediction_loss = self.prediction_criterion(outputs, ts_target)
 
-                # loss = 0.25*spatial_loss + 0.25*temporal_loss + 0.5*prediction_loss
-                loss = 0.5*spatial_loss + 0.5*prediction_loss
+                loss = 0.25*spatial_loss + 0.25*temporal_loss + 0.5*prediction_loss
 
                 # Caculate computation cost
                 if (batch_idx + 1) % 100 == 0:
