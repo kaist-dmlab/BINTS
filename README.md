@@ -1,6 +1,4 @@
-# BINTS
-
-# Bi-Modal Learning for Networked Time Series
+# BINTS: Bi-Modal Learning for Networked Time Series
 
 This is the implementation of BINTS published in KDD 2025 [[paper]](https://github.com/kaist-dmlab/BINTS)
 
