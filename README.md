@@ -2,6 +2,8 @@
 
 # Bi-Modal Learning for Networked Time Series
 
+This is the implementation of BINTS published in KDD 2025 [[paper]](https://github.com/kaist-dmlab/BINTS)
+
 ## 1. Overview
 Understanding human mobility patterns is a complex challenge that requires modeling both node features and node interactions within graph topologies across time. While previous methods have focused on either node features or interactions, the synergistic integration of these two modalities has proven difficult to achieve. In this paper, we propose ***BINTS*** (**BI**-modal learning for **N**etworked **T**ime **S**eries), a pioneering bi-modal learning framework that employs soft contrastive learning along the temporal axis. ***BINTS*** captures modality similarities and temporal patterns by simultaneously learning from evolving node features and interactions, solving the limitations of single-modality approaches. To evaluate our method, we curate comprehensive multi-modal human mobility datasets spanning diverse locations and times. Our experimental results demonstrate that BINTS significantly outperforms existing forecasting models by capturing synergies across different data modalities. Overall, we establish BINTS as a powerful technique for holistically understanding and forecasting complex mobility dynamics.
 
