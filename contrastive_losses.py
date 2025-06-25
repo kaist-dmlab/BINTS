@@ -14,46 +14,6 @@ class ContrastiveLoss(nn.Module):
         loss = torch.mean((1 - target) * torch.pow(cos_sim, 2) + (target) * torch.pow(torch.clamp(self.margin - cos_sim, min=0.0), 2))
         return loss
 
-# class RankingContrastiveLoss(nn.Module):
-#     def __init__(self, temperature=1.0, margin=0.2):
-#         super(RankingContrastiveLoss, self).__init__()
-#         self.temperature = temperature
-#         self.margin = margin
-
-#     def forward(self, cosine_similarity, adjacency_matrix):
-        
-#         batch_size, _, _ = cosine_similarity.size()
-
-#         # Reshape cosine similarity and adjacency matrix to (batch_size, num_nodes^2)
-#         cosine_similarity_flat = cosine_similarity.view(batch_size, -1)
-#         adjacency_matrix_flat = adjacency_matrix.view(batch_size, -1)
-
-#         # Compute masks for positive and negative pairs
-#         pos_mask = adjacency_matrix_flat > 0
-#         neg_mask = adjacency_matrix_flat == 0
-
-#         # Compute positive loss
-#         pos_cos_sim = cosine_similarity_flat.masked_select(pos_mask)
-#         pos_cos_sim = pos_cos_sim.view(batch_size, -1)  # Reshape to maintain batch dimension
-#         pos_cos_sim = pos_cos_sim.unsqueeze(2)  # Add singleton dimension for broadcasting
-#         pos_loss = torch.log(1 + torch.exp(-pos_cos_sim / self.temperature))
-#         total_pos_pairs = pos_loss.size(1)
-
-#         # Compute negative loss
-#         neg_cos_sim = cosine_similarity_flat.masked_select(neg_mask)
-#         neg_cos_sim = neg_cos_sim.view(batch_size, -1)  # Reshape to maintain batch dimension
-#         neg_cos_sim = neg_cos_sim.unsqueeze(1)  # Add singleton dimension for broadcasting
-#         neg_loss = torch.log(1 + torch.exp(neg_cos_sim / self.temperature))
-#         total_neg_pairs = neg_loss.size(2)
-
-#         # Normalize by the total number of pairs
-#         total_pairs = total_pos_pairs + total_neg_pairs
-
-#         # Compute total loss
-#         total_loss = torch.mean(-torch.log(pos_loss / (pos_loss + neg_loss))) / total_pairs
-
-#         return total_loss
-
 class RankingContrastiveLoss(nn.Module):
     def __init__(self, margin=0.2):
         super(RankingContrastiveLoss, self).__init__()
