@@ -12,12 +12,12 @@ Due to the big dataset size, we released it on the anonymous drive
 
 | **Domain**       | **Dataset** | **#Node** | **Target Dim.** | **Total Period**             | **Train Days** | **Test Days** | **Time Interval** |
 |------------------|-------------|------------|-----------------|------------------------------|----------------|---------------|-------------------|
-| **Transportation** | Daegu       | 85         | 7395            | 2022.01.01 ~ 2022.12.31      | 274            | 91            | 1 hour            |
-|                  | Busan       | 103        | 10815           |                              |                |               |                   |
-|                  | Seoul       | 233        | 54755           |                              |                |               |                   |
-|                  | NYC Taxi    | 10         | 120             | 2014.01.01 ~ 2023.12.31      | 2739           | 913           | 1 hour            |
+| **Transportation** | Daegu       | 85         | 7395          | 2022.01.01 ~ 2022.12.31      | 274            | 91            | 1 hour            |
+| **Transportation** | Busan       | 103        | 10815           | 2022.01.01 ~ 2022.12.31      | 274            | 91            | 1 hour            |
+| **Transportation** | Seoul       | 233        | 54755           | 2022.01.01 ~ 2022.12.31      | 274            | 91            | 1 hour            |
+| **Transportation** | NYC Taxi    | 10         | 120             | 2014.01.01 ~ 2023.12.31      | 2739           | 913           | 1 hour            |
 | **Epidemic**     | COVID       | 16         | 272             | 2020.01.20 ~ 2023.08.31      | 990            | 330           | 1 day             |
-|                  | NYC COVID   | 5          | 30              | 2020.03.01 ~ 2023.12.31      | 1051           | 350           | 1 day             |
+| **Epidemic**     | NYC COVID   | 5          | 30              | 2020.03.01 ~ 2023.12.31      | 1051           | 350           | 1 day             |
 
 
 ## 3. Requirements and Installations
